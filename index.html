@@ -6,87 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-  body{
-    width: 100%;
-    /* height: 100vh; */
-  }
-  header{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100px;
-    
-  }
-  h1, h2, h3{
-    text-align: center;
-    margin-bottom:24px;
-  }
-  ul.lists{
-    display: flex;
-    
-  }
-  ul.lists a{
-    display: block;
-    text-decoration:none;
-  }
-  ul.lists li{
-    list-style: none;
-    padding-left: 22px;
-  }
-  ul.lists li:hover{
-    transform: scale(1.2);
-    text-decoration: underline solid 2px black;
-  }
-   div.img-content{
-    height: 300px;
-    width: 300px;
-    background-image:url(./images/computer-001.jpg);
-    background-repeat:no-repeat;
-    background-position:bottom;
-    background-size:cover;
-  }
-  div.about, div.works p{
-    padding-left: 12px;
-  }
-  
-  div.work-content img{
-    width: 300px;
-    height: 300px;
-  }
-  div.work-content img:hover{
-    transform: scale(1.5);
-    transition-duration:.8s;
-  }
-  div.work-content{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-    gap:30px
-  }
-  div.contact-form{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    margin-top: 20px;
-  }
-  div.contact-form form{
-    background-color: rgb(188, 188, 188);
-    padding: 24px;
-    width: 50%;
-    text-align:center;
-  }
-  div.contact-form dl dd{
-    padding: 12px;
-  }
-  div.contact-form form dd dd{
-    float:left;
-    clear: both;
-    width: 200px;
-  }
- 
-  </style>
+  <link href="css/sp.css" media="screen and (max-width:600px)">
 </head>
 <body>
   <header>
@@ -104,7 +24,7 @@
   </header>
   <main>
   <div class="img-content">
-    <!-- <img src="./images/computer-002.jpg"> -->
+    <img src="./images/computer-002.jpg">
   </div>
   <a name="challenge"></a>
   <div class="about">
@@ -136,47 +56,41 @@
       <img src="./images/child-play-tsumiki.jpg">
     </div>
   </div>
-  <div class="contact-form">
-  <form method="" action="">
-    <dl>
-      
-      <dt>ユーザ名</dt>
-      <dd><input type="text" required></dd>
-      <dt>メールアドレスを入力してください</dt>
-      <dd><input type="email" required></dd>
-      <dt>このサイトを知ったきっかけ</dt>
-      <dd>
-        <select name="" id="">
-          <option value="" selected>---</option>
-          <option value="">検索していてたまたまみつかった</option>
-         <option value="">他のサイトからのリンクで飛んできた</option>
-         <option value="">その他</option>
-        </select>
-      </dd>
-      <dt>このサイトの改善点</dt>
-      <dd><textarea name="" id="" cols="30" rows="10" width="250"></textarea></dd>
-      <div>
-        <label for="">username</label>
-        <input type="text">
+
+      <div class="contact-form">
+       <form>
+        <h3>Contact Form</h3>
+        <div>
+
+          <label for="" required>ユーザ名を入力してください</label>
+          <input type="text">
+        </div>
+        <div>
+          <label for="">メールアドレスを入力してください</label>
+          <input type="email">
+        </div>
+        <div>
+         <label for="">こちらのサイトへきたきっかけは</label>
+          <select>
+            <option selected>-----</option>
+            <option>たまたまみかけた</option>
+            <option>リンク先から飛んだ</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="textarea">
+          <label>お問い合わせなど</label>
+          <div>
+
+            <textarea name="" id="" cols="40" rows="10"></textarea>
+          </div>
+        </div>
+        <button type="submit">送信</button>
       </div>
-    </dl>
+ 
   </form>
 </div>
   </main>
-  
-  <script>
-  // const images = document.querySelectorAll('img');
-  // images.forEach((img)=>{
-  //   img.addEventListener('mouseover',showMessage)
-  // })
-  // function showMessage(){
 
-  //   images.forEach((image)=>{
-  //   const p= document.createElement('p');
-  //   image.after(p);
-  //   p.innerText='this is baby?'
-  //   });
-  // }
-  </script>
 </body>
 </html>
