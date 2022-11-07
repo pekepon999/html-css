@@ -82,7 +82,7 @@ div.contact-form input{
   margin-left: 20px;
 }
 div.contac-form textarea{
-  width: 30%;
+  float: right;
 }
 div.contact-form label.required:after{
   content:"maru";
@@ -98,11 +98,20 @@ button[type="submit"]{
   border-radius: 2em;
 }
 button[type="submit"]:hover{
-  color:black;
+  color:#000000;
   border:1px solid black;
 }
 @media screen and (max-width:600px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  div.contact-form{
+    width: 100%;
+  }
   div.contact-form textarea{
     width: 30%;
   }
+  
 }
