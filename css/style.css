@@ -29,13 +29,15 @@ ul.lists li:hover{
   transform: scale(1.2);
   text-decoration: underline solid 2px black;
 }
- div.img-content{
+ div.img-content img{
   /* height: 300px;
   width: 300px; */
-  background-image:url(./images/computer-002.jpg);
+  /* background-image:url(./images/computer-002.jpg);
   background-repeat:no-repeat;
   background-position:bottom;
-  background-size:cover;
+  background-size:cover; */
+  width: 100%;
+  object-fit: contain;
 }
 div.about, div.works p{
   padding-left: 12px;
@@ -82,8 +84,8 @@ div.contact-form div{
   
 }
 div.contact-form input{
-  width:20%;
-  
+  width:200px;
+  margin-right: 100px;
 }
 /* div.contac-form input{
   text-align: justify;
