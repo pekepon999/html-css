@@ -54,24 +54,28 @@ div.work-content{
   display: flex;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  gap:30px
+  gap:30px;
+  margin-bottom: 12px;
 }
 div.contact-form{
   display: flex;
   justify-content:center;
   align-items:center;
   margin-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  
 }
 div.contact-form form{
   background-color: rgb(188, 188, 188);
   
-  width: 60%;
+  width:70%;
   text-align:center;
   height: 500px;
 }
 div.contact-form label{
   float: left;
-  padding-left: 12px;
+  padding-left: 40px;
 }
 div.contact-form div{
   padding-top: 12px;
@@ -79,8 +83,11 @@ div.contact-form div{
 }
 div.contact-form input{
   width:20%;
-  margin-left: 20px;
+  
 }
+/* div.contac-form input{
+  text-align: justify;
+} */
 div.contac-form textarea{
   float: right;
 }
@@ -89,8 +96,8 @@ div.contact-form label.required:after{
   color:red;
 }
 button[type="submit"]{
-  width: 20%;
-  height: 30px;
+  width: 26%;
+  height: 40px;
   background: rgb(202, 197, 197);
   color:white;
   margin-top: 20px;
@@ -111,7 +118,7 @@ button[type="submit"]:hover{
     width: 100%;
   }
   div.contact-form textarea{
-    width: 30%;
+    max-width: 30%;
   }
   
 }
