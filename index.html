@@ -4,35 +4,95 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Document</title>
+  <script src="index.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
+  <link href="css/sp.css" media="screen and (max-width:600px)">
 </head>
 <body>
   <header>
-    <p>空は青い</p>
+  <div class="header-content">
+   <h2>html css Code</h2>
+  </div>
+    <div class="heaer-menu">
+       <ul class="lists">
+        <li><a href="#">About me</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#challenge">Challenge</a></li>
+        
+       </ul>
+    </div>
   </header>
-  <div class="content">
-   <dl>hello test
-   <dt>description here</dt>
-   <dd>this page is just as test for github</dd>
-  </dl>
- 
   <main>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci voluptatibus aliquid! Id, quas vel nam in magnam autem. Veniam ex corporis excepturi tenetur nobis sed iure, quisquam itaque magni!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci voluptatibus aliquid! Id, quas vel nam in magnam autem. Veniam ex corporis excepturi tenetur nobis sed iure, quisquam itaque magni!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci voluptatibus aliquid! Id, quas vel nam in magnam autem. Veniam ex corporis excepturi tenetur nobis sed iure, quisquam itaque magni!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci voluptatibus aliquid! Id, quas vel nam in magnam autem. Veniam ex corporis excepturi tenetur nobis sed iure, quisquam itaque magni!</p>
+  <div class="img-content">
+    <img src="./images/computer-002.jpg">
+  </div>
+  <a name="challenge"></a>
+  <div class="about">
+    <h2>About</h2>
+  <p>Javascript 株式会社設立</p>
+  <p>事業内容：</p>
+  <p>現在プログラマーを募集
+      特に言語は問わないがC言語、C#など。
+  </p>
+  </div>
+  <hr>
+  <div class="works">
+    <h2>works</h2>
+    <p>私が、あるいは我々が求める行動に必要なものです
+      それらはバラバラのピースのようにわかれていますが意味をもっています。一体なぜ木造のテーブルやルービックキューブがあるのでしょうか。</p>
+      <p>
+        飛躍しますが、我々は完成品を求めていません。
+        どの色も同じ色で完成されたルービックキューブはそれ自体何も意味がないという皮肉です。どの色も同じでしかないルービックキューブはどんな操作をしても何も変わらないということです。
+      </p>
+    
+    
+    <div class="work-content">
+      <img  src="./images/book.jpg">
+      <img src="./images/woder-boy.jpg">
+      <img src="./images/ru-bik.jpg">
+      <img src="./images/computer-002.jpg">
+      <img src="./images/table-set.png">
+      <img src="./images/airport-2.jpg">
+      <img src="./images/adobe.jpg">
+    </div>
+  </div>
 
-  <aside>
-    <ul>
-      <li a href="#">hello there</li>
-      <li a href="#">hello there</li>
-      <li a href="#">hello there</li>
-      <li a href="#">hello there</li>
+      <div class="contact-form">
+       <form>
+        <h3>Contact Form</h3>
+        <div>
 
-    </ul>
-  </aside>
-</main>
+          <label for="name" required>ユーザ名を入力してください</label>
+          <input type="text">
+        </div>
+        <div>
+          <label for="email">メールアドレスを入力してください</label>
+          <input type="email">
+        </div>
+        <div>
+         <label for="select">こちらのサイトへきたきっかけは</label>
+          <select>
+            <option selected>-----</option>
+            <option>たまたまみかけた</option>
+            <option>リンク先から飛んだ</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="textarea">
+          <label>お問い合わせなど</label>
+          <div>
+
+            <textarea name="" id="" cols="40" rows="10"></textarea>
+          </div>
+        </div>
+        <button type="submit">送信</button>
+      </div>
+ 
+  </form>
 </div>
+  </main>
+
 </body>
 </html>
